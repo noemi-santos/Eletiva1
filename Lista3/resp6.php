@@ -26,8 +26,8 @@
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         try {
-            $valor = floatval($_POST["valor"]);//pega qualquer texte e tranformar em um numero
-            arredondar($valor);
+            $valor = floatval($_POST["valor"]);
+            //arredondar($valor);
             echo "O número arredondado é: ".arredondar($valor);
 
         } catch (Exception $e) {

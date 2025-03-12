@@ -20,12 +20,12 @@
 
     function contarCaractere(string  $palavra): void {
         $quantidade = strlen($palavra);
-        echo "A quantidade é: $quantidade";
+        echo "A quantidade de caracteres é: $quantidade";
     }
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         try {
-            $palavra = $_POST["texto"];//pega qualquer texte e tranformar em um numero
+            $palavra = $_POST["texto"];
             contarCaractere($palavra);
 
         } catch (Exception $e) {

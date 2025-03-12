@@ -31,7 +31,7 @@
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         try {
-            $dia = intval($_POST["dia"]);//pega qualquer texte e tranformar em um numero
+            $dia = intval($_POST["dia"]);
             $mes = intval($_POST["mes"]);
             $ano = intval($_POST["ano"]);
 
