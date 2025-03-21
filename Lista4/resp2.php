@@ -30,11 +30,9 @@
 
                 arsort($a);
                 
-                echo "Lista de Alunos";
-                echo "<br/>";
+                echo "<p>Lista de Alunos</p>";
                 foreach ($a as $chave => $m) {
-                    echo "Nome: $chave - Média: $m";
-                    echo "<br/>";
+                    echo "<p>Nome: $chave - Média: $m</p>";
                 }
 
                 }

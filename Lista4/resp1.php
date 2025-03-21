@@ -35,11 +35,9 @@
 
                 ksort($a);
                 
-                echo "Lista de Contatos";
-                echo "<br/>";
+                echo "<p>Lista de Contatos</p>";
                 foreach ($a as $chave => $v) {
-                    echo "Nome: $chave - Telefone: $v";
-                    echo "<br/>";
+                    echo "<p>Nome: $chave - Telefone: $v</p>";
                 }
 
                 }

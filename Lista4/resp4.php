@@ -26,11 +26,9 @@
                     
                 asort($a);
 
-                echo "Lista de Itens";
-                echo "<br/>";
+                echo "<p>Lista de Itens</p>";
                 foreach ($a as $itens => $preco) {
-                    echo "Item:: $itens -  Preço: R$ $preco";
-                    echo "<br/>";
+                    echo "<p>Item:: $itens -  Preço: R$ $preco</p>";
                 }
             }
                 catch (Exception $e) {

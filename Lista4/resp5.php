@@ -24,16 +24,15 @@
                     $a[$titulos] = $estoque[$i];
                     
                     if ($estoque[$i] < 5){
-                        echo "Alerta: O livro '$titulos' está com estoque baixo - ($estoque[$i] unidades)<br/>";
+                        echo "<p>Alerta: O livro '$titulos' está com estoque baixo - ($estoque[$i] unidades)</p>";
                     }
                 }
                     
                 ksort($a);
 
-                echo "<br/>Lista de livros<br/>";
+                echo "<p>Lista de livros</p>";
                 foreach ($a as $titulo => $estoque) {
-                    echo "Item:: $titulo -  Estoque: $estoque unidades";
-                    echo "<br/>";
+                    echo "<p>Item:: $titulo -  Estoque: $estoque unidades</p>";
                 }
             }
                 catch (Exception $e) {

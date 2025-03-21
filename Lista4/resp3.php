@@ -35,11 +35,9 @@
                     return strcmp($a['nome'], $b['nome']); //strcmp verifica qual nome vem primeiro em ordem alfabética
                 });
 
-                echo "Lista de Produtos";
-                echo "<br/>";
+                echo "<p>Lista de Produtos</p>";
                 foreach ($a as $codigo => $produto) {
-                    echo "Código: $codigo - Nome: {$produto['nome']} - Preço: R$ {$produto['preco']}";
-                    echo "<br/>";
+                    echo "<p>Código: $codigo - Nome: {$produto['nome']} - Preço: R$ {$produto['preco']}</p>";
                 }
             }
                 catch (Exception $e) {
