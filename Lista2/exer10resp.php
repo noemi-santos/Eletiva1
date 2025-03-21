@@ -16,7 +16,7 @@
                 $valor1 = $_POST['valor1'];
                 for ($i = 1; $i <= 10; $i++){
                     $result = $valor1 * $i;
-                    echo "$valor1 X $i = $result<br/>";
+                    echo "<p>$valor1 X $i = $result</p>";
 
                 }
             }

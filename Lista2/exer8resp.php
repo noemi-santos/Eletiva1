@@ -16,7 +16,7 @@
                 $valor1 = $_POST['valor1'];
                 $i = $valor1;
                 do{
-                    echo"$i<br/>";
+                    echo"<p>$i</p>";
                     $i--;
                 }while($i >= 1);
             

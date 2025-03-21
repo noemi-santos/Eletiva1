@@ -15,7 +15,7 @@
 
                 $valor1 = $_POST['valor1'];
                 for ($i = 1;$i <= $valor1; $i ++){
-                    echo "$i<br/>";
+                    echo "<p>$i</p>";
                 }
             }
             catch (Exception $e) { 
