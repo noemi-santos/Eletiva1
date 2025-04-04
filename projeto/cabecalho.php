@@ -29,10 +29,20 @@
             <li class="nav-item">
               <a class="nav-link" href="categorias.php">Categorias</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-danger" href="#" id="logoutButton">Sair</a>
+          </ul>
+          <div class="d-flex">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <?= $_SESSION['usuario'] ?>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="alterar_dados.php">Alterar Dados</a></li>
+                <li><a class="dropdown-item btn btn-danger" href="sair.php" id="logoutButton">Sair</a></li>
+              </ul>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </nav>

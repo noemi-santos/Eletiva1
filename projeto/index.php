@@ -23,6 +23,7 @@
                     session_start();
                     $_SESSION['usuario'] = $usuario["nome"];
                     $_SESSION['acesso'] = true;
+                    $_SESSION['id'] = $usuario['id'];
                     header('location: principal.php'); //o usuario vai ser redirecionado para a pagina de acesso
 
                 }else{
