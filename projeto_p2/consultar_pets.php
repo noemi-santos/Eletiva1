@@ -3,10 +3,10 @@
 
 ?>
 
-    <h2> Consultar Produto </h2>
+    <h2> Consultar Pets </h2>
 
     <div class="mb-2">
-        <p> Nome do pet: <strong> Pet 1 </strong></p>
+        <p> Chip do pet: <strong> Pet 1 </strong></p>
     </div>
 
     <div class="mb-2">
@@ -14,11 +14,11 @@
     </div>
 
     <div class="mb-2">
-        <p> Descrição do produto: <strong> Produto 1 </strong></p>
+        <p> Idade do pet: <strong> Pet 1 </strong></p>
     </div>
 
     <div class="mb-2">
-        <p> Valor do produto: <strong> Produto 1 </strong></p>
+        <p> Raça do pet: <strong> Pet 1 </strong></p>
     </div>
 
     <div class="mb-2">

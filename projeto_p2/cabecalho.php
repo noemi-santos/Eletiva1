@@ -24,16 +24,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="produtos.php">Pets</a>
+              <a class="nav-link" href="pets.php">Pets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categorias.php">Tutores</a>
+              <a class="nav-link" href="tutores.php">Tutores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categorias.php">Atendimento</a>
+              <a class="nav-link" href="atendimentos.php">Atendimento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="categorias.php">Consulta</a>
+              <a class="nav-link" href="consultas.php">Consulta</a>
             </li>
           </ul>
           <div class="d-flex">
