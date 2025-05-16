@@ -1,68 +1,48 @@
 <?php
     require_once("cabecalho.php");
+
+    
+    function retornaPets(){
+        require("conexao.php");
+        try{
+            $sql = "SELECT p.*, t.nome_tutor 
+                    FROM pets p
+                    INNER JOIN tutores t ON t.cpf = p.tutores_cpf";
+            $stmt = $pdo->query($sql);
+            return $stmt->fetchAll();
+        } catch (Exception $e){
+            die("Erro ao consultar pets: " . $e->getMessage());
+        }
+    }
+
+    $pets = retornaPets();
 ?>
 
-    <h2>Pets</h2>
-    <a href="novo_pet.php" class="btn btn-success mb-3">Novo Pet</a>
-        <table class="table table-hover table-striped">
-        <thead>
-            <tr>
-                <th>chip</th>
-                <th>nome</th>
-                <th>idade</th>
-                <th>raça</th>
-            </tr>
-        </thead>
-        <tbody>
-                                
-            <tr>
-                <td>1</td>
-                <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-                <td>
-                    <a href="editar_pet.php" class="btn btn-warning">Editar</a>
-                    <a href="consultar_pets.php" class="btn btn-info">Consultar</a>
-                </td>
-            </tr>
-                                
-            <tr>
-                <td>2</td>
-                <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-                <td>
-                    <a href="#" class="btn btn-warning">Editar</a>
-                    <a href="#" class="btn btn-info">Consultar</a>
-                </td>
-            </tr>
+<h2>Pets</h2>
+<a href="novo_pet.php" class="btn btn-success mb-3">Novo Pet</a>
 
+<table class="table table-hover table-striped" id="tabela">
+    <thead>
+        <tr>
+            <th>Chip</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Raça</th>
+            <th>Tutor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($pets as $p): ?>
             <tr>
-                <td>3</td>
-                <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-                <td>
-                    <a href="#" class="btn btn-warning">Editar</a>
-                    <a href="#" class="btn btn-info">Consultar</a>
-                </td>
+                <td><?= $p['chip'] ?></td>
+                <td><?= $p['nome_pet'] ?></td>
+                <td><?= $p['idade_pet'] ?></td>
+                <td><?= $p['raca_pet'] ?></td>
+                <td><?= $p['nome_tutor'] ?></td>
             </tr>
-                                
-            <tr>
-                <td>4</td>
-                <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-                <td>
-                    <a href="#" class="btn btn-warning">Editar</a>
-                    <a href="#" class="btn btn-info">Consultar</a>
-                </td>
-            </tr>
-                                
-            <tr>
-                <td>5</td>
-                <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-                <td>
-                    <a href="#" class="btn btn-warning">Editar</a>
-                    <a href="#" class="btn btn-info">Consultar</a>
-                </td>
-            </tr>
-                                
-        </tbody>
-        </table>
-                
+        <?php endforeach; ?>
+    </tbody>
+</table>
 
 <?php
     require_once("rodape.php");
