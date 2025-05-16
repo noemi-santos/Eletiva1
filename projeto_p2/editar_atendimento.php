@@ -62,7 +62,7 @@
 
     <div class="mb-3">
         <label for="descricao" class="form-label">Descrição</label>
-        <input value="<?= $atendimento['descricao'] ?>" type="text" id="descricao" name="descricao" class="form-control" required>
+        <textarea id="descricao" name="descricao" class="form-control" rows ="4" required><?= $atendimento['descricao'] ?> </textarea>
     </div>
 
     <div class="mb-3">
