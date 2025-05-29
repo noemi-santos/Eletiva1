@@ -36,6 +36,9 @@
             <li class="nav-item">
               <a class="nav-link" href="consultas.php">Consulta</a>
             </li>
+              <li class="nav-item">
+              <a class="nav-link" href="dashboard.php">Dashboard</a>
+            </li>
           </ul>
           <div class="d-flex">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
