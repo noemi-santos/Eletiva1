@@ -21,7 +21,7 @@
 <h2>Consultas</h2>
 <a href="nova_consulta.php" class="btn btn-success mb-3">Nova Consulta</a>
 
-<table class="table table-hover table-striped">
+<table class="table table-hover table-striped" id="tabela">
     <thead>
         <tr>
             <th>ID</th>
@@ -42,4 +42,6 @@
     </tbody>
 </table>
 
-<?php require_once("rodape.php"); ?>
+<?php 
+    require_once("rodape.php"); 
+?>

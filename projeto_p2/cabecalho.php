@@ -31,10 +31,10 @@
               <a class="nav-link" href="tutores.php">Tutores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="atendimentos.php">Atendimento</a>
+              <a class="nav-link" href="atendimentos.php">Atendimentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="consultas.php">Consulta</a>
+              <a class="nav-link" href="consultas.php">Consultas</a>
             </li>
               <li class="nav-item">
               <a class="nav-link" href="dashboard.php">Dashboard</a>
