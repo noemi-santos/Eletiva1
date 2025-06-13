@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $id_consulta = $_POST['id_consulta'];
     excluirConsulta($id_consulta);
 } else {
-    $consulta = consultarConsulta($_GET['id_consulta']);
+    $consulta = consultarConsulta($_GET['id']);
 }
 
 ?>

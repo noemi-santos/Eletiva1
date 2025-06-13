@@ -52,7 +52,7 @@
 
     <div class="mb-3">
         <label for="id" class="form-label">ID</label>
-        <input value="<?= $atendimento['id'] ?>" type="number" id="id" name="id" class="form-control" required>
+        <input value="<?= $atendimento['id'] ?>" type="number" id="id" name="id" class="form-control" readonly>
     </div>
 
     <div class="mb-3">
@@ -70,7 +70,7 @@
         <input value="<?= $atendimento['valor'] ?>" type="number" step="0.01" id="valor" name="valor" class="form-control" required>
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+    <button type="submit" class="btn btn-primary">Salvar</button>
 </form>
 
 <?php

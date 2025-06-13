@@ -45,7 +45,7 @@
 <form method="post">
     <div class="mb-3">
         <label for="chip" class="form-label">Chip:</label>
-        <input type="text" id="chip" name="chip" class="form-control" value="<?= $pet['chip'] ?>" readonly>
+        <input type="text" id="chip" name="chip" class="form-control" value="<?= $pet['chip'] ?>" required>
     </div>
 
     <div class="mb-3">
@@ -65,13 +65,13 @@
 
     <div class="mb-3">
         <label for="tutores_cpf" class="form-label">Tutor:</label>
-        <select id="tutores_cpf" name="tutores_cpf" class="form-control" required>
-            <?php foreach($tutores as $tutor): ?>
-                <option value="<?= $tutor['cpf'] ?>" <?= ($tutor['cpf'] == $pet['cpf_tutor']) ? 'selected' : '' ?>>
-                    <?= $tutor['nome_tutor'] ?> (<?= $tutor['cpf'] ?>)
-                </option>
-            <?php endforeach; ?>
-        </select>
+            <select id="tutores_cpf" name="tutores_cpf" class="form-control" required>
+                <?php foreach($tutores as $tutor): ?>
+                    <option value="<?= $tutor['cpf'] ?>" <?= ($tutor['cpf'] == $pet['tutores_cpf']) ? 'selected' : '' ?>>
+                        <?= $tutor['nome_tutor'] ?> (<?= $tutor['cpf'] ?>)
+                    </option>
+                <?php endforeach; ?>
+            </select>
     </div>
 
     <button type="submit" class="btn btn-primary">Salvar</button>

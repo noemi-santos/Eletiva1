@@ -64,7 +64,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $atendimento_id = $_POST['atendimento_id'];
     alterarConsulta($id_consulta, $data_consulta, $pets_chip, $atendimento_id);
 } else {
-    $consulta = consultarConsulta($_GET['id_consulta']);
+    $consulta = consultarConsulta($_GET['id']);
 }
 
 ?>
@@ -77,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     <div class="mb-3">
         <label for="data_consulta" class="form-label">Data da Consulta</label>
-        <input type="date" id="data_consulta" name="data_consulta" class="form-control" required value="<?= $consulta['data_consulta'] ?>">
+        <input type="date" id="data_consulta" name="data_consulta" class="form-control" required value="<?= substr($consulta['data_consulta'], 0, 10) ?>">
     </div>
 
     <div class="mb-3">
@@ -102,7 +102,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         </select>
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+    <button type="submit" class="btn btn-primary">Salvar</button>
     <a href="consultas.php" class="btn btn-secondary">Voltar</a>
 
 </form>
