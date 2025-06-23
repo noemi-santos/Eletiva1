@@ -47,6 +47,7 @@
     </div>
                     
     <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="button" class="btn btn-secondary" onclick="history.back();">Voltar</button>
 </form>
 
 <?php

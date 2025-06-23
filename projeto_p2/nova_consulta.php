@@ -81,8 +81,8 @@
         </select>
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar Consulta</button>
-    <a href="consultas.php" class="btn btn-secondary">Voltar</a>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="button" class="btn btn-secondary" onclick="history.back();">Voltar</button>
 </form>
 
 <?php require_once("rodape.php"); ?>
