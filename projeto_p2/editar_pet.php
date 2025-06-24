@@ -45,7 +45,7 @@
 <form method="post">
     <div class="mb-3">
         <label for="chip" class="form-label">Chip:</label>
-        <input type="text" id="chip" name="chip" class="form-control" value="<?= $pet['chip'] ?>" required>
+        <input type="text" id="chip" name="chip" class="form-control" value="<?= $pet['chip'] ?>" readonly>
     </div>
 
     <div class="mb-3">

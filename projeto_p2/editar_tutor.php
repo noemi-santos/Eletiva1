@@ -59,7 +59,7 @@
                         
     <div class="mb-3">
         <label for="cpf" class="form-label">Informe o cpf</label>
-        <input value="<?= $tutores['cpf'] ?>"  type="number" id="cpf" name="cpf" class="form-control" required="">
+        <input value="<?= $tutores['cpf'] ?>"  type="number" id="cpf" name="cpf" class="form-control" readonly>
     </div>
                     
     <div class="mb-3">
@@ -78,6 +78,7 @@
         </div>
                     
     <button type="submit" class="btn btn-primary">Enviar</button>
+    <a href="tutores.php" class="btn btn-secondary">Voltar</a>
 </form>
             
 
